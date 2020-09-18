@@ -1,19 +1,27 @@
 {
-  "name": "crud-elastic",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node api/index.js",
-    "nodemon": "nodemon api/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "elasticsearch": "^16.7.1",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.4"
-  }
+    "name": "crud-elastic",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node api/index.js",
+        "nodemon": "nodemon api/index.js",
+        "test": "NODE_ENV=test DEBUG=true nyc mocha  --exit  "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "dotenv": "^8.2.0",
+        "elasticsearch": "^16.7.1",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.4",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
+        "mocha": "^8.1.3",
+        "nyc": "^15.1.0"
+    }
 }
