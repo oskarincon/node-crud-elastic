@@ -246,7 +246,7 @@ describe('Show all user and partial data ', function() {
                         age: 28
                     })
                     .end(function(err, res) {
-                        expect(res.status).to.equal(200);
+                        expect(res.status).to.equal(500);
                         done();
                     });
 
