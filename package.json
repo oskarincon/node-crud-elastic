@@ -6,7 +6,9 @@
     "scripts": {
         "start": "node api/index.js",
         "nodemon": "nodemon api/index.js",
-        "test": "NODE_ENV=test DEBUG=true nyc mocha  --exit  "
+        "test": "NODE_ENV=test DEBUG=true mocha --exit",
+        "only-test": "mocha --inspect-brk only-test / test/app.spec.js ",
+        "coverage": "nyc --reporter=lcov --reporter=text npm run test"
     },
     "author": "",
     "license": "ISC",

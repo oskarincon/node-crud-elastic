@@ -1,3 +1,6 @@
 node_modules/*
 *.log
 .nyc_output
+reports/
+coverage/
+.DS_Store

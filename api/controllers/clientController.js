@@ -3,7 +3,6 @@ const { logger } = require('../middleware/headersResponse');
 
 
 let getClients = async(req, res) => {
-    console.log()
     try {
         let from = req.query.from;
         let size = req.query.size;

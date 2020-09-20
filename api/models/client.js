@@ -38,6 +38,7 @@ let postMethod = async(id, body) => {
 }
 
 let deleteMethod = async(id) => {
+    debugger;
     return await esclient.delete({
         index,
         id
